@@ -3,6 +3,10 @@ the tests in index.test.js. */
 
 export function greetPerson(name) {
   //👉 2.1 - Write the code for this function based on what you see in the tests!
+  if (name === String) {
+    return "Greetings " + name
+  }
+  console.log(name)
   if ( name === 1) {
     return "Please try again with a name!"
   }   if( name == true) {

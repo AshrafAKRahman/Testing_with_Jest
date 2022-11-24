@@ -40,3 +40,24 @@ test(`When given a boolean instead of a string, the greetPerson function returns
 });
 
 //👉 2.2 - Write your tests for the other functions below:
+test ('doubles the number given and adds 1', ()=>{
+  const actual = doubleAndAddOne(5)
+  const expected = 11
+
+  expect(actual).toBe(expected)
+
+})
+
+test('checks if an array is longer than 10 items', ()=> {
+  const actual = isLongArray([1,2,3,4,5])
+  const expected = false
+
+  expect(actual).toBe(expected)
+})
+
+test('checks if the function adds items to an array', ()=>{
+  const actual =addItemToArray([1,2,3],4)
+  const expected = [1,2,3,4]
+
+  expect(actual).toStrictEqual(expected)
+})
